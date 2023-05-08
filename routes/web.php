@@ -31,3 +31,10 @@ Route::get('/index', function () {
 Route::get('/create', function () {
     return view('viatura.create');
 });
+Route::get('/create_entidade', function () {
+    return view('entidade.create');
+});
+
+Route::get('/create_cartao', function () {
+    return view('cartao.create');
+});
