@@ -360,6 +360,7 @@
                 </div>
                 <!-- /# row -->
                 <div id="main-content">
+                    @yield("conteudo")
     
                     <!-- /# row -->
                     <div class="row">

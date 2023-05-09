@@ -1,4 +1,4 @@
-@extends('layout.admin')
+@extends('layout.admin2')
 
 @section('titulo')
     Dashboard
@@ -6,5 +6,5 @@
 
 
 @section('conteudo')
-
+<h1>hhhhhhhhhhhhhhhhhhhh</h1>
 @endsection

@@ -14,7 +14,7 @@ class EntidadeController extends Controller
      */
     public function index()
     {
-        
+        return view("entidade.index");
     }
 
     /**
@@ -24,7 +24,7 @@ class EntidadeController extends Controller
      */
     public function create()
     {
-        //
+        return view("entidade.create");
     }
 
     /**
@@ -35,7 +35,10 @@ class EntidadeController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $entidade=new Entidade;
+        $entidade->nome=$request->nome;
+        $entidade->descricaoLocalizacao=$request->descricaoLocalizacao;
+        $entidade->save();
     }
 
     /**

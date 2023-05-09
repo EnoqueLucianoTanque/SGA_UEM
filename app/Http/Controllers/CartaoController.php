@@ -14,7 +14,7 @@ class CartaoController extends Controller
      */
     public function index()
     {
-        //
+        return view("cartao.index");
     }
 
     /**
@@ -24,7 +24,7 @@ class CartaoController extends Controller
      */
     public function create()
     {
-        //
+        return view("cartao.create");
     }
 
     /**
@@ -35,7 +35,10 @@ class CartaoController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $cartao=new Cartao;
+        $cartao->saldo=$request->saldo;
+        $cartao->utente_id=$request->utente_id;
+        $cartao->save();
     }
 
     /**
